@@ -1,6 +1,6 @@
 'use client';
 
-import { Form, Input } from "@/components/UI";
+import { Form, Input } from "@/components/UI/forms";
 import { CategorySchema, CreateCategoryInput } from "@/validators/category.schema";
 import { createCategory, updateCategory } from "@/app/actions/category.actions";
 import { useState } from "react";

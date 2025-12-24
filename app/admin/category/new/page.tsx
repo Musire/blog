@@ -9,7 +9,7 @@ export default function PostCreation () {
               <BackButton />
               <h1 className=" text-2xl">Category Creation Form</h1>
             </span>
-            <CategoryCreationForm />
+            <CategoryCreationForm data={{ title: '', description: '' }} />
         </div>
     </main>
   );

@@ -1,6 +1,6 @@
 'use client';
 
-import { Form, Input } from "@/components/UI";
+import { Form, Input } from "@/components/UI/forms";
 import DropdownButton from "../UI/buttons/DropdownButton";
 import ControlledInput from "../UI/forms/ControlledInput";
 import { createPost, updatePost } from "@/app/actions/post.actions";
