@@ -1,0 +1,59 @@
+src/
+├── app/
+│   ├── (public)/
+│   │   ├── page.tsx                # Landing / home
+│   │   ├── blog/
+│   │   │   ├── page.tsx            # Blog index
+│   │   │   └── [slug]/
+│   │   │       └── page.tsx        # Blog post page
+│   │
+│   ├── (admin)/
+│   │   ├── admin/
+│   │   │   ├── layout.tsx          # Admin shell
+│   │   │   ├── page.tsx            # Admin dashboard
+│   │   │   ├── posts/
+│   │   │   │   ├── page.tsx        # List posts
+│   │   │   │   └── new/
+│   │   │   │       └── page.tsx    # Create post
+│   │   │   └── categories/
+│   │   │       └── page.tsx
+│   │
+│   ├── api/
+│   │   └── revalidate/
+│   │       └── route.ts            # ISR revalidation hook
+│   │
+│   ├── actions/
+│   │   ├── post.actions.ts         # Server Actions (CRUD)
+│   │   └── category.actions.ts
+│   │
+│   ├── layout.tsx                  # Root layout
+│   └── not-found.tsx
+│
+├── components/
+│   ├── ui/                          # Generic reusable UI
+│   ├── blog/
+│   └── admin/
+│
+├── lib/
+│   ├── db.ts                        # MongoDB connection cache
+│   ├── auth.ts                     # Auth helpers (server)
+│   └── constants.ts
+│
+├── models/
+│   ├── Post.ts
+│   ├── Category.ts
+│   └── User.ts
+│
+├── services/
+│   ├── post.service.ts             # Business logic layer
+│   └── category.service.ts
+│
+├── validators/
+│   ├── post.schema.ts              # Zod schemas
+│   └── category.schema.ts
+│
+├── styles/
+│   └── globals.css
+│
+└── types/
+    └── index.ts
